@@ -8,8 +8,27 @@ body {
 
 html {
     font-family: $primary-font;
+    color: $color-violet;
 }
 
-.container{
-    padding: 0px 24px;
+h1 {
+    font-family: $secondary-font;
+    font-size: 60px;
+}
+
+.container {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+
+    @media all and (min-width: $width-medium) {
+        padding: 0px 24px;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    @media all and (min-width: $width-large) {
+        max-width: 60%;
+        width: 60%;
+    }
 }

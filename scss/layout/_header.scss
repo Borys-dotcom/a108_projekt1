@@ -1,0 +1,92 @@
+.main-header {
+    position: relative;
+    padding-top: 120px;
+
+    .header-container {
+
+        .title-description {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: $secondary-font;
+        }
+
+        .title-paragraph {
+            color: $color-dark-gray;
+        }
+
+        @media all and (min-width: $width-medium) {
+            width: 100%;
+        }
+
+        @media all and (min-width: $width-large) {
+            width: 75%;
+        }
+
+        .btn-container {
+            display: flex;
+            
+            .reserve-now {
+                padding: 12px 20px;
+                background-color: $color-blue;
+                text-decoration: none;
+                color: $color-white;
+
+                &hover {
+                    cursor: pointer;
+                }
+            }
+
+            .watch-now {
+                display: flex;
+                margin-left: 24px;
+                text-decoration: none;
+                color: $color-dark-gray;
+                line-height: 44px;
+
+                .play-icon {
+                    display: inline-block;
+                    color: $color-violet;
+                    margin-right: 10px;
+                    width: 44px;
+                    height: 44px;
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 44px;
+                    border: 1px solid $color-dark-gray;
+                    border-radius: 50%;
+
+                    &:before {
+                        margin-left: 5px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    @media all and (min-width: $width-medium) {
+        padding-top: 210px;
+    }
+
+    .header-flowers{
+        position: absolute;
+        left: 0;
+        top: 35%;
+        z-index: -5;
+        max-width: 10%;
+    }
+
+    .header-bg-image{
+        position: absolute;
+        right: 0;
+        top: 0%;
+        // z-index: -10;
+        max-width: 35%;
+        z-index: 10;
+
+        @media all and (max-width: $width-large) {
+            display: none;;
+        }
+    }
+}
