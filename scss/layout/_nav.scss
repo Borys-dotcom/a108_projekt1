@@ -1,0 +1,113 @@
+.upper-nav-bar {
+    margin-top: 24px;
+
+    .nav-align-box {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .nav-img {
+
+            img {
+                width: 100px;
+            }
+        }
+
+
+        .hamburger-icon {
+            display: none;
+            line-height: 100px;
+            color: $color-blue;
+            font-size: 32px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .actual-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            text-align: end;
+            width: 400px;
+            background-color: $color-blue;
+
+            .menu-close-icon {
+                display: inline-block;
+                line-height: 100px;
+                margin: 0px 24px;
+                font-size: 32px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .nav-links {
+                list-style-type: none;
+                text-transform: uppercase;
+                padding-right: 50px;
+
+                li {
+
+                    a {
+                        color: $color-white;
+                        font-size: 52px;
+                        line-height: 2em;
+                        text-decoration: none;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .visibility {
+            display: block;
+        }
+    }
+
+    @media all and (min-width: $width-medium) {
+
+        .nav-align-box {
+            justify-content: flex-start;
+
+            .hamburger-icon {
+                display: none;
+            }
+
+            .actual-menu {
+                display: block;
+                background-color: transparent;
+                position: static;
+                width: 60%;
+                text-align: start;
+
+                .menu-close-icon {
+                    display: none;
+                }
+
+                .nav-links {
+                    display: flex;
+                    li {
+                        margin: 12px;
+
+                        a {
+                            color: $color-violet;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

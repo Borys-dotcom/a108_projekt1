@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto", serif;
+}
+
+.container {
+  padding: 0px 24px;
+}
+
+.upper-nav-bar {
+  margin-top: 24px;
+}
+.upper-nav-bar .nav-align-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.upper-nav-bar .nav-align-box .nav-img img {
+  width: 100px;
+}
+.upper-nav-bar .nav-align-box .hamburger-icon {
+  display: none;
+  line-height: 100px;
+  color: #1ba5cd;
+  font-size: 32px;
+}
+.upper-nav-bar .nav-align-box .hamburger-icon:hover {
+  cursor: pointer;
+}
+.upper-nav-bar .nav-align-box .actual-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: end;
+  width: 400px;
+  background-color: #1ba5cd;
+}
+.upper-nav-bar .nav-align-box .actual-menu .menu-close-icon {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0px 24px;
+  font-size: 32px;
+}
+.upper-nav-bar .nav-align-box .actual-menu .menu-close-icon:hover {
+  cursor: pointer;
+}
+.upper-nav-bar .nav-align-box .actual-menu .nav-links {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-right: 50px;
+}
+.upper-nav-bar .nav-align-box .actual-menu .nav-links li a {
+  color: #fff;
+  font-size: 52px;
+  line-height: 2em;
+  text-decoration: none;
+}
+.upper-nav-bar .nav-align-box .actual-menu .nav-links li a:hover {
+  cursor: pointer;
+}
+.upper-nav-bar .nav-align-box .visibility {
+  display: block;
+}
+@media all and (min-width: 768px) {
+  .upper-nav-bar .nav-align-box {
+    justify-content: flex-start;
+  }
+  .upper-nav-bar .nav-align-box .hamburger-icon {
+    display: none;
+  }
+  .upper-nav-bar .nav-align-box .actual-menu {
+    display: block;
+    background-color: transparent;
+    position: static;
+    width: 60%;
+    text-align: start;
+  }
+  .upper-nav-bar .nav-align-box .actual-menu .menu-close-icon {
+    display: none;
+  }
+  .upper-nav-bar .nav-align-box .actual-menu .nav-links {
+    display: flex;
+  }
+  .upper-nav-bar .nav-align-box .actual-menu .nav-links li {
+    margin: 12px;
+  }
+  .upper-nav-bar .nav-align-box .actual-menu .nav-links li a {
+    color: #473452;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
