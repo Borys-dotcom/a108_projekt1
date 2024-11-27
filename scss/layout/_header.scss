@@ -1,7 +1,6 @@
 .main-header {
     position: relative;
-    padding-top: 120px;
-    z-index: 0;
+    padding-top: 60px;
 
     .container {
         text-align: inherit;
@@ -28,6 +27,7 @@
 
                 .button-primary {
                     border-radius: 0px;
+                    text-transform: none;
                 }
 
                 .watch-now {

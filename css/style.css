@@ -11,7 +11,12 @@ html {
   color: #473452;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bellota", serif;
 }
 
@@ -41,7 +46,8 @@ h2 {
   padding: 0 24px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 @media all and (min-width: 768px) {
   .container {
@@ -53,6 +59,34 @@ h2 {
   .container {
     max-width: 70%;
     width: 70%;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .col-md-50p {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .col-md-33p {
+    width: 33.33%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .col-lg-25p {
+    width: 25%;
   }
 }
 
@@ -70,8 +104,8 @@ h2 {
   background-color: #fff;
 }
 .upper-nav-bar .container {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .upper-nav-bar .container .nav-align-box {
   display: flex;
@@ -122,6 +156,7 @@ h2 {
   line-height: 2em;
   text-decoration: none;
   font-weight: 700;
+  z-index: 500;
 }
 .upper-nav-bar .container .nav-align-box .actual-menu .nav-links li a:hover {
   cursor: pointer;
@@ -152,6 +187,7 @@ h2 {
     margin-top: 32px;
     justify-content: flex-start;
     width: 100%;
+    margin-left: 20px;
   }
   .upper-nav-bar .container .nav-align-box .actual-menu .nav-links li {
     margin: 12px;
@@ -163,8 +199,7 @@ h2 {
 }
 .main-header {
   position: relative;
-  padding-top: 120px;
-  z-index: 0;
+  padding-top: 60px;
 }
 .main-header .container {
   text-align: inherit;
@@ -188,6 +223,7 @@ h2 {
 }
 .main-header .container .header-container .btn-container .button-primary {
   border-radius: 0px;
+  text-transform: none;
 }
 .main-header .container .header-container .btn-container .watch-now {
   display: flex;
@@ -248,11 +284,78 @@ h2 {
   width: 100px;
 }
 
+.services {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.services .col {
+  position: relative;
+}
+.services .col .service {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  z-index: 5;
+  transition: all 0.5s;
+  width: 100%;
+  max-height: 320px;
+}
+.services .col .service:hover {
+  opacity: 0.2;
+}
+@media all and (min-width: 992px) {
+  .services .col .service {
+    max-height: 400px;
+  }
+}
+.services .col .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ba5cd;
+}
+.services .col .overlay .overlay-logo {
+  width: 50px;
+}
+.services .col h3 {
+  color: #fff;
+}
+
+.procedures .container .infobox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.procedures .container .infobox-container .infobox {
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+}
+.procedures .container .infobox-container .infobox p {
+  color: #888888;
+  font-weight: 300;
+  margin-bottom: 48px;
+  font-size: 14px;
+}
+.procedures .container .infobox-container .infobox img {
+  width: 100%;
+}
+.procedures .container .infobox-container .infobox .button-primary {
+  margin-bottom: 20px;
+}
+
 .button-secondary, .button-primary {
-  padding: 12px 20px;
+  display: inline-block;
+  padding: 12px 36px;
   text-decoration: none;
   color: #fff;
   border-radius: 9999px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .button-primary {
   background-color: #1ba5cd;

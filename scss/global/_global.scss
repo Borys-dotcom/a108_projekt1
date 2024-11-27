@@ -11,7 +11,12 @@ html {
     color: $color-violet;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $secondary-font;
 }
 
@@ -36,11 +41,13 @@ h2 {
 }
 
 .container {
+    // display: block;
     text-align: center;
     padding: 0 24px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 
     @media all and (min-width: $width-medium) {
         // padding: 0px 24px;
@@ -53,6 +60,35 @@ h2 {
         width: 70%;
     }
 }
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 100%;
+}
+
+.col-md-50p {
+    @media all and (min-width: $width-medium){
+        width: 50%;
+    }
+}
+
+.col-md-33p {
+    @media all and (min-width: $width-medium){
+        width: 33.33%;
+    }
+}
+
+.col-lg-25p {
+    @media all and (min-width: $width-large){
+        width: 25%;
+    }
+}
+
 
 %title-description {
     .title-description {
