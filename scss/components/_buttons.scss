@@ -1,0 +1,28 @@
+%button-template {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: $color-white;
+    border-radius: 9999px;
+
+    &hover {
+        cursor: pointer;
+    }
+}
+
+.button-primary {
+    @extend %button-template;
+    background-color: $color-blue;
+
+    &:hover {
+        background-color: $color-dark-gray;
+    } 
+}
+
+.button-secondary {
+    @extend %button-template;
+    background-color: $color-dark-gray;
+
+    &:hover {
+        background-color: $color-blue;
+    } 
+}

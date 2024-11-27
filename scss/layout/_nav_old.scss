@@ -1,0 +1,170 @@
+.upper-nav-bar {
+    position: fixed;
+    margin-top: 24px;
+    width: 100%;
+    height: 70px;
+    z-index: 15;
+    background-color: $color-white;
+
+    .nav-align-box {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+
+        @media all and (min-width: $width-medium) {
+            justify-content: flex-start;
+        }
+
+        .nav-img {
+
+            img {
+                width: 100px;
+            }
+        } 
+
+
+        .hamburger-icon {
+            display: none;
+            line-height: 100px;
+            color: $color-blue;
+            font-size: 32px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .actual-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            text-align: end;
+            width: 75%;
+            // width: 400px;
+            background-color: $color-blue;
+
+            @media all and (min-width: $width-medium) {
+                display: block;
+                background-color: transparent;
+                position: static;
+                text-align: start;
+                width: 75%;
+            }
+
+            .menu-close-icon {
+                display: inline-block;
+                line-height: 100px;
+                margin-top: 24px;
+                margin-right: 7.5%;
+                // margin: 0px 24px;
+                font-size: 32px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media all and (min-width: $width-medium) {
+                    display: none;
+                }
+
+            }
+
+            .nav-links {
+                list-style-type: none;
+                text-transform: uppercase;
+                padding-right: 40px;
+
+
+                @media all and (min-width: $width-medium) {
+                    display: flex;
+                    margin-top: 32px;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                li {
+
+                    @media all and (min-width: $width-medium) {
+                        margin: 4px;
+                    }
+
+                    a {
+                        color: $color-white;
+                        font-size: 52px;
+                        line-height: 2em;
+                        text-decoration: none;
+                        font-weight: 700;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        @media all and (min-width: $width-medium) {
+                            color: $color-violet;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .visibility {
+            display: block;
+        }
+
+        @media all and (min-width: $width-medium) {
+            .hamburger-icon {
+                display: none;
+            }
+        }
+
+    }
+}
+
+// @media all and (min-width: $width-medium) {
+//     .upper-nav-bar {
+
+//         .nav-align-box {
+
+//             // justify-content: flex-start;
+
+//             .hamburger-icon {
+//                 // display: none;
+//             }
+
+//             .actual-menu {
+//                 // display: block;
+//                 // background-color: transparent;
+//                 // position: static;
+//                 // text-align: start;
+//                 // width: 100%;
+
+//                 .menu-close-icon {
+//                     // display: none;
+//                 }
+
+//                 .nav-links {
+//                     // display: flex;
+//                     // margin-top: 32px;
+//                     // justify-content: space-between;
+//                     // width: 100%;
+
+//                     li {
+//                         // margin: 4px;
+
+//                         // a {
+//                         //     color: $color-violet;
+//                         //     font-size: 16px;
+//                         // }
+//                     }
+//                 }
+
+//             }
+
+//         }
+//     }
+// }

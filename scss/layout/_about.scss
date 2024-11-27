@@ -1,0 +1,13 @@
+.about {
+
+    .container {
+
+        img {
+            width: 100px;
+        }
+
+        @extend %title-description;
+   
+        
+    }
+}

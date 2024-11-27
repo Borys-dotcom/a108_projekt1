@@ -11,24 +11,54 @@ html {
     color: $color-violet;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: $secondary-font;
+}
+
+h1 {
     font-size: 60px;
 }
 
-.container {
-    padding: 0;
-    width: 90%;
+h2 {
+    font-size: 42px;
+}
+
+.section-text {
+    color: $color-light-gray;
+    font-size: 16px;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 42px;
 
     @media all and (min-width: $width-medium) {
-        padding: 0px 24px;
+        width: 80%;
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 0 24px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 64px;
+
+    @media all and (min-width: $width-medium) {
+        // padding: 0px 24px;
         max-width: 90%;
         width: 90%;
     }
 
     @media all and (min-width: $width-large) {
-        max-width: 60%;
-        width: 60%;
+        max-width: 70%;
+        width: 70%;
+    }
+}
+
+%title-description {
+    .title-description {
+        margin: 24px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: $secondary-font;
     }
 }
