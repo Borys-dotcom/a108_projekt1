@@ -29,6 +29,25 @@
             padding-right: 17.5%;
         }
 
+        .error {
+            border-bottom: 1px solid red;
+        }
+
+        .appointment-message {
+            width: 100%;
+            height: 20px;
+            border: 0px;
+
+            &.error {
+                color: red;
+            }
+
+            &.return-data{
+                color: $color-white;
+            }
+
+        }
+
         // input,
         // textarea,
         // select {

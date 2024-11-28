@@ -491,6 +491,20 @@ form .button-primary:hover {
     padding-right: 17.5%;
   }
 }
+.appointment .appointment-form .error {
+  border-bottom: 1px solid red;
+}
+.appointment .appointment-form .appointment-message {
+  width: 100%;
+  height: 20px;
+  border: 0px;
+}
+.appointment .appointment-form .appointment-message.error {
+  color: red;
+}
+.appointment .appointment-form .appointment-message.return-data {
+  color: #fff;
+}
 .appointment .appointment-form select,
 .appointment .appointment-form #appointment-date {
   text-transform: uppercase;
