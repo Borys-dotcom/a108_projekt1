@@ -1,0 +1,57 @@
+.contact {
+    background-color: $color-blue;
+
+        h2 {
+            color: $color-white;
+        }
+
+        .section-text {
+            color: $color-white
+        }
+
+        .contact-data {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            margin-bottom: 64px;
+
+            .contact-container {
+                display: flex;
+                justify-content: center;
+                gap: 48px;
+                color: $color-white;
+                margin-top: 24px;
+
+                .contact-text {
+                    text-align: left;
+                }
+
+                a {
+                    color: $color-white;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .contact-picture-container {
+                    width: 50px;
+
+                    .contact-img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input {
+                width: 100%;
+            }
+        }
+}

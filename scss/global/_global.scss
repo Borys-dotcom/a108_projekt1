@@ -72,19 +72,19 @@ h2 {
 }
 
 .col-md-50p {
-    @media all and (min-width: $width-medium){
+    @media all and (min-width: $width-medium) {
         width: 50%;
     }
 }
 
 .col-md-33p {
-    @media all and (min-width: $width-medium){
+    @media all and (min-width: $width-medium) {
         width: 33.33%;
     }
 }
 
 .col-lg-25p {
-    @media all and (min-width: $width-large){
+    @media all and (min-width: $width-large) {
         width: 25%;
     }
 }
@@ -96,5 +96,95 @@ h2 {
         text-transform: uppercase;
         font-weight: bold;
         font-family: $secondary-font;
+    }
+}
+
+.infobox-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .infobox-holder {
+
+        padding: 0 6px;
+
+        .infobox {
+            padding: 12px;
+            border: 1px solid #f0f0f0;
+            // margin: 0 12px;
+
+            &:hover {
+                box-shadow: 0 5px 20px #f0f0f0;
+                ;
+            }
+
+            p {
+                color: $color-light-gray;
+                font-weight: 300;
+                margin-bottom: 32px;
+                font-size: 14px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .button-primary {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin-bottom: 12px;
+    border: 0px;
+    border-bottom: 1px solid $color-white;
+    font-size: 16px;
+    color: $color-white;
+    background-color: $color-blue;
+    padding: 12px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input,
+select {
+    @media all and (min-width: $width-medium) {
+        width: 49%;
+    }
+}
+
+input::placeholder,
+        textarea::placeholder {
+            text-transform: uppercase;
+            color: $color-white;
+            opacity: 1;
+        }
+
+form {
+    .button-primary {
+        border: 1px solid $color-blue;
+        display: inline-block;
+        background-color: $color-white;
+        color: $color-violet;
+        font-weight: 700;
+        padding: 12px;
+        transition: all 0.3s;
+
+        &:hover {
+            border: 1px solid $color-white;
+            background-color: $color-blue;
+            color: $color-white;
+            cursor: pointer;
+        }
+
     }
 }

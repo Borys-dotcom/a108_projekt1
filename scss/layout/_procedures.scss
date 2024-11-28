@@ -1,32 +1,38 @@
-.procedures {
-    
-    .container {
+// .procedures {
 
-        .infobox-container {
+//     .container {
 
-            display: flex;
-            flex-wrap: wrap;
+//         .infobox-container {
 
-            .infobox {
-                padding: 12px;
-                border: 1px solid #f0f0f0;
-                // margin: 0 12px;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
 
-                p {
-                    color: $color-light-gray;
-                    font-weight: 300;
-                    margin-bottom: 48px;
-                    font-size: 14px;
-                }
+//             .infobox-holder {
 
-                img {
-                    width: 100%;
-                }
+//                 padding: 0 6px;
 
-                .button-primary {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
-}
+//                 .infobox {
+//                     padding: 12px;
+//                     border: 1px solid #f0f0f0;
+//                     // margin: 0 12px;
+
+//                     p {
+//                         color: $color-light-gray;
+//                         font-weight: 300;
+//                         margin-bottom: 48px;
+//                         font-size: 14px;
+//                     }
+
+//                     img {
+//                         width: 100%;
+//                     }
+
+//                     .button-primary {
+//                         margin-bottom: 20px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
