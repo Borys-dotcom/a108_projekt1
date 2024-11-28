@@ -1,0 +1,35 @@
+.main-page-footer {
+    margin-top: 32px;
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .nav-links {
+        margin-top: 32px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+
+        li {
+            margin: 12px 32px;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-violet;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .footer-text {
+        margin-top: 64px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-light-gray;
+    }
+
+}

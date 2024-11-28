@@ -496,6 +496,19 @@ form .button-primary:hover {
   text-transform: uppercase;
 }
 
+.blog-links {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: #888888;
+}
+.blog-links a {
+  text-decoration: none;
+  color: #888888;
+  margin: 0 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .contact {
   background-color: #1ba5cd;
 }
@@ -541,6 +554,36 @@ form .button-primary:hover {
 }
 .contact .contact-form input {
   width: 100%;
+}
+
+.main-page-footer {
+  margin-top: 32px;
+}
+.main-page-footer .footer-logo {
+  width: 100px;
+}
+.main-page-footer .nav-links {
+  margin-top: 32px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.main-page-footer .nav-links li {
+  margin: 12px 32px;
+}
+.main-page-footer .nav-links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #473452;
+  font-weight: 700;
+}
+.main-page-footer .footer-text {
+  margin-top: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #888888;
 }
 
 .button-secondary, .button-primary {
